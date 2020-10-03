@@ -1,0 +1,153 @@
+header
+{
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.562);
+}
+body
+{
+    margin: auto;
+    color: white;
+}
+#header
+{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+    font-size: 30px;
+   
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: initial;
+    font-weight: 2;
+  
+    color: rgb(235, 252, 1);
+}
+#legenda
+{
+    font-size: 30px;
+    color: white;
+}
+ 
+#frm
+{
+   
+    width: 700px;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.562);
+}
+
+#cname
+{
+    position: relative;
+    right: 95px;
+  
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: initial;
+    font-weight: 2;
+}
+#capellido
+{
+    position: relative;
+    right: 95px;
+ 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: initial;
+    font-weight: 2;
+}
+#cemail
+{
+    position: relative;
+    right: 105px;
+   
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: initial;
+    font-weight: 2;
+}
+#ctelefono
+{
+    position: relative;
+    right: 50px;
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: initial;
+    font-weight: 2;
+}
+#cpais
+{
+    position: relative;
+    right: 130px;
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: initial;
+    font-weight: 2;
+}
+#Tlegend
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: initial;
+    font-weight: 2;
+    font-size: 25pt;
+    color: rgb(235, 252, 1);
+}
+#pais
+{
+    position: relative;
+    left: 18pt;
+    height: 20pt;
+    width: 90pt;
+    background: rgba(255, 253, 253, 0.836);
+}
+#email
+{
+    position: relative;
+    left: 15pt;
+    height: 16pt;
+    background: rgba(255, 253, 253, 0.836);
+}
+#listaNúmeros
+{
+    height: 20pt;
+    background: rgba(255, 253, 253, 0.836);
+}
+#telefono
+{
+    height: 15.5pt;
+    width: 90pt;
+    background: rgba(255, 253, 253, 0.836);
+}
+#name
+{
+    height: 15.5pt;
+    background: rgba(255, 253, 253, 0.836);
+}
+#apellido
+{
+    height: 15.5pt;
+    background: rgba(255, 253, 253, 0.836);
+}
+.letras
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: initial;
+    font-weight: 2;
+    
+}
+
+#Footer
+{
+    background: rgba(0, 0, 0, 0.562);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: initial;
+    font-weight: 2;
+    position: relative;
+    font-size: 12px;
+    top: 40pt;
+    text-align: center;
+   
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+#text
+{
+    color: rgb(235, 252, 1);
+}
