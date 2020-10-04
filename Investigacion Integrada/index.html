@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no"">
     <title>MATH</title>
     <link rel="stylesheet" href="css/style.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script>
+       $(function(){
+    $(document).on('change','#listaNumeros',function(){ //detectamos el evento change
+     var value = $(this).val();//sacamos el valor del select
+    $('#telefono').val(value);//le agregamos el valor al input (notese que el input debe tener un ID para que le caiga el valor)
+  });
+});
+   </script>
 </head>
 <body background="img/bg.jpeg">
     <header>
@@ -25,29 +35,38 @@
      
         <center>
            
-        <form action="" id="frm">
+        <form action="" id="frm" method="get">
             <legend id="Tlegend">
                 Regístrate
             </legend>
-            <p id="cname"> Nombre : <input type="text" id="name" class="letras"> </p>
-            <p id="capellido"> Apellido : <input type="text" id="apellido" class="letras"> </p>
-            <p id="ctelefono"> Teléfono : <select name="listaNúmeros" id="listaNúmeros"  class="letras"> 
-                <option value="+503 "> El Salvador +503 </option>
+            <p id="nombre_apellido"> Nombre : <input type="text" id="name" class="letras" pattern="^[A-Z a-záéúíóñ]{4,30}$" oninvalid="InvalidName(this);" oninput="InvalidName(this);">  &nbsp;&nbsp;Apellido : <input type="text" id="apellido" class="letras"  pattern="^[A-Z a-záéúíóñ]{4,30}$" oninvalid="InvalidLastName(this);" oninput="InvalidLastName(this);">
+                &nbsp;&nbsp;  País : <select name="país" id="pais" class="letras">
+                    <option value="El Salvador">El Salvador</option>
+                    <option value="Guatemala">Guatemala</option>
+                    <option value="Honduras">Honduras</option>
+                    <option value="Nicaragua">Nicaragua</option>
+                    <option value="Costa Rica">Costa Rica</option> 
+                    <option value="Panamá">Panamá</option>   
+                    <option value="Belice">Belice</option>
+                </select> </p>
+          
+            <p id="Telefono_Email"> Teléfono : <select class="listaNumeros" name="listaNumeros" id="listaNumeros"  > 
+                <option value="+501 "> Belice: +501</option>
                 <option value="+502 "> Guatemala +502 </option>
+                <option value="+503 "> El Salvador +503 </option>               
                 <option value="+504 "> Honduras: +504</option>
                 <option value="+505 "> Nicaragua: +505</option>
-                <option value="+506 "> Costa Rica: +506</option>     
-            </select> <input type="tel" name="telefono" id="telefono" class="letras"></p>
-            <p id="cemail"> Email: <input type="email" id="email" name="correo" placeholder="Ej.: usuario@servidor.com" class="letras"></p>
-            <p id="cpais"> País :       
-                <select name="país" id="pais" class="letras">
-                    <option value="El Salvador"> El Salvador</option>
-                    <option value="Guatemala"> Guatemala</option>
-                    <option value="Honduras"> Honduras</option>
-                    <option value="Nicaragua"> Nicaragua</option>
-                    <option value="Costa Rica"> Costa Rica</option>     
-                </select>
-            </p>
+                <option value="+506 "> Costa Rica: +506</option>
+                <option value="+507 "> Panamá: +507</option>     
+            </select>  &nbsp;&nbsp;<input name="tel" type="tel"  id="telefono"  class="telefono" oninput="" >
+            &nbsp;&nbsp;&nbsp;    Email: <input type="email" id="email" name="correo" placeholder="Ej.: usuario@servidor.com" class="letras" ></p>
+          
+           <p>
+               <input id="Registrar" type="submit" value="Registrar" onclick="registrar()" >
+               
+           </p>
+
+           
         </form>
         </center>  
         
@@ -68,6 +87,6 @@
                 </legend>
             </div>
             </center>
-   
+            <script src="js/Articulacion.js"></script>
 </body>
 </html>

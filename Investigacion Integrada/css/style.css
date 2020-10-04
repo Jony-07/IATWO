@@ -8,6 +8,7 @@ body
 {
     margin: auto;
     color: white;
+    
 }
 #header
 {
@@ -31,48 +32,36 @@ body
 #frm
 {
    
-    width: 700px;
-    height: 300px;
+    width: 800px;
+    height: 250px;
     background: rgba(0, 0, 0, 0.562);
+    flex: auto;
+    display: block;
 }
 
-#cname
+#nombre_apellido
 {
     position: relative;
-    right: 95px;
-  
+    
+     right: 10pt;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: initial;
     font-weight: 2;
+
 }
-#capellido
+
+
+#Telefono_Email
 {
     position: relative;
-    right: 95px;
- 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: initial;
-    font-weight: 2;
-}
-#cemail
-{
-    position: relative;
-    right: 105px;
-   
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: initial;
-    font-weight: 2;
-}
-#ctelefono
-{
-    position: relative;
-    right: 50px;
+    right: 52px;
     
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: initial;
     font-weight: 2;
+    top: 30pt;
 }
-#cpais
+#Cpago
 {
     position: relative;
     right: 130px;
@@ -91,8 +80,7 @@ body
 }
 #pais
 {
-    position: relative;
-    left: 18pt;
+    
     height: 20pt;
     width: 90pt;
     background: rgba(255, 253, 253, 0.836);
@@ -100,30 +88,43 @@ body
 #email
 {
     position: relative;
-    left: 15pt;
+    
     height: 16pt;
+    width: 130pt;
     background: rgba(255, 253, 253, 0.836);
 }
-#listaNúmeros
+#listaNumeros
 {
     height: 20pt;
     background: rgba(255, 253, 253, 0.836);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: initial;
+    font-weight: 2;
+  
 }
 #telefono
 {
     height: 15.5pt;
     width: 90pt;
+    
     background: rgba(255, 253, 253, 0.836);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: initial;
+    font-weight: 2;
 }
 #name
 {
     height: 15.5pt;
     background: rgba(255, 253, 253, 0.836);
+    position: relative;
+    left: 4pt;
+   
 }
 #apellido
 {
     height: 15.5pt;
     background: rgba(255, 253, 253, 0.836);
+    
 }
 .letras
 {
@@ -141,13 +142,34 @@ body
     font-weight: 2;
     position: relative;
     font-size: 12px;
-    top: 40pt;
+    top: 50pt;
     text-align: center;
    
-    padding-bottom: 30px;
-    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-top: 40px;
 }
 #text
 {
     color: rgb(235, 252, 1);
+}
+
+
+
+
+#Registrar
+{
+    position: relative;
+    top: 45pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: initial;
+    font-weight: 2;
+    width: 80pt;
+    height: 20pt;
+    padding-bottom: 5px;
+    padding-top: 3px;
+    font-size: 15px;
+    background:  rgba(227, 243, 81, 0.815);
+    border-radius: 5px;
+    display: block;
+  
 }
