@@ -1,92 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no"">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0,user-scalable=no"">
     <title>MATH</title>
-    <link rel="stylesheet" href="css/style.css">
-    
+    <link rel="stylesheet" href="css/style.css" />
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-   <script>
-       $(function(){
-    $(document).on('change','#listaNumeros',function(){ //detectamos el evento change
-     var value = $(this).val();//sacamos el valor del select
-    $('#telefono').val(value);//le agregamos el valor al input (notese que el input debe tener un ID para que le caiga el valor)
-  });
-});
-   </script>
-</head>
-<body background="img/bg.jpeg">
+    <script>
+      $(function () {
+        $(document).on("change", "#listaNumeros", function () {
+          //detectamos el evento change
+          var value = $(this).val(); //sacamos el valor del select
+          $("#telefono").val(value); //le agregamos el valor al input (notese que el input debe tener un ID para que le caiga el valor)
+        });
+      });
+      //https://www.pizarra.cl/assets/images/fondo1.jpg
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+  </head>
+  
+  <body background="img/img.jpg">
     <header>
-        <div id="header">
-            <h1>
-                INSCRIPCIONES.
-                <legend id="legenda">
-                    <span>
-                        Cursos de matemática.
-                    </span>
-                </legend>
-              
-            </h1>
-           
-        </div>    
+      <div id="header">
+        <h1 id="titulo">INSCRIPCIONES.</h1>
+      </div>
     </header>
     <div class="container">
-     
-        <center>
-           
-        <form action="" id="frm" method="get">
-            <legend id="Tlegend">
-                Regístrate
-            </legend>
-            <p id="nombre_apellido"> Nombre : <input type="text" id="name" class="letras" pattern="^[A-Z a-záéúíóñ]{4,30}$" oninvalid="InvalidName(this);" oninput="InvalidName(this);">  &nbsp;&nbsp;Apellido : <input type="text" id="apellido" class="letras"  pattern="^[A-Z a-záéúíóñ]{4,30}$" oninvalid="InvalidLastName(this);" oninput="InvalidLastName(this);">
-                &nbsp;&nbsp;  País : <select name="país" id="pais" class="letras">
-                    <option value="El Salvador">El Salvador</option>
-                    <option value="Guatemala">Guatemala</option>
-                    <option value="Honduras">Honduras</option>
-                    <option value="Nicaragua">Nicaragua</option>
-                    <option value="Costa Rica">Costa Rica</option> 
-                    <option value="Panamá">Panamá</option>   
-                    <option value="Belice">Belice</option>
-                </select> </p>
-          
-            <p id="Telefono_Email"> Teléfono : <select class="listaNumeros" name="listaNumeros" id="listaNumeros"  > 
-                <option value="+501 "> Belice: +501</option>
-                <option value="+502 "> Guatemala +502 </option>
-                <option value="+503 "> El Salvador +503 </option>               
-                <option value="+504 "> Honduras: +504</option>
-                <option value="+505 "> Nicaragua: +505</option>
-                <option value="+506 "> Costa Rica: +506</option>
-                <option value="+507 "> Panamá: +507</option>     
-            </select>  &nbsp;&nbsp;<input name="tel" type="tel"  id="telefono"  class="telefono" oninput="" >
-            &nbsp;&nbsp;&nbsp;    Email: <input type="email" id="email" name="correo" placeholder="Ej.: usuario@servidor.com" class="letras" ></p>
-          
-           <p>
-               <input id="Registrar" type="submit" value="Registrar" onclick="registrar()" >
-               
-           </p>
+      <center>
+        <form action="" id="frm" method="get" >
+          <div class="container" id="margin">
+            <p id="p_nombre">
+              Nombre : <input type="text" id="name" class="letras" p />
+              <label class="Mensaje_error" id="labelinvisible_name">
+                Formato incorrecto: Dato no númerico
+              </label>
+              <br />
+            </p>
+            <p id="p_apellido">
+              Apellido : <input type="text" id="apellido" class="letras" />
+              <label class="Mensaje_error" id="labelinvisible_lastname">
+                Formato incorrecto: Dato no númerico
+              </label>
+            </p>
+            <p id="p_pais">
+              &nbsp;&nbsp; País :
+              <select name="país" id="pais" class="letras">
+                <option value="El Salvador">El Salvador</option>
+                <option value="Guatemala">Guatemala</option>
+                <option value="Honduras">Honduras</option>
+                <option value="Nicaragua">Nicaragua</option>
+                <option value="Costa Rica">Costa Rica</option>
+                <option value="Panamá">Panamá</option>
+                <option value="Belice">Belice</option>
+              </select>
+            </p>
 
-           
+            <p id="Telefono_Email">
+              Teléfono :
+              <select class="letras" name="listaNumeros" id="listaNumeros">
+                <option value="+501 ">Belice: +501</option>
+                <option value="+502 ">Guatemala +502</option>
+                <option value="+503 ">El Salvador +503</option>
+                <option value="+504 ">Honduras: +504</option>
+                <option value="+505 ">Nicaragua: +505</option>
+                <option value="+506 ">Costa Rica: +506</option>
+                <option value="+507 ">Panamá: +507</option>
+              </select>
+              <input name="tel" type="tel" id="telefono" class="telefono" />
+              <label class="Mensaje_error" id="labelinvisible">
+                Formato correcto: +(Codigo área) número
+              </label>
+            </p>
+            <p id="p_email">
+              Email:
+              <input
+                type="email"
+                id="email"
+                name="correo"
+                placeholder="Ej.: usuario@servidor.com"
+                class="letras"
+              />
+              <label class="Mensaje_error" id="labelinvisible_correo">
+                Formato correcto: usuario@servidor.com</label
+              >
+            </p>
+            <p>
+              <input
+                class="btn btn-danger"
+                id="Registrar"
+                type="submit"
+                value="Registrar"
+                onclick="registrar()"
+              />
+            </p>
+          </div>
         </form>
-        </center>  
-        
-              
+      </center>
     </div>
-          
-       
-            <center>
-   
-         
-            <div id="Footer">
-                <legend>
-                    <span>
-                        © Copyright  2020 | Todos los derechos reservados | <span id="text">
-                            Developed by Jony López, Abigail Saravia y Karla Olivia
-                        </span> 
-                    </span>
-                </legend>
-            </div>
-            </center>
-            <script src="js/Articulacion.js"></script>
-</body>
+
+    <center>
+      <div id="Footer">
+        <legend>
+          <span id="span">
+            © Copyright 2020 | Todos los derechos reservados |
+            <span id="text">
+              Developed by Jony López, Abigail Saravia y Karla Olivia
+            </span>
+          </span>
+        </legend>
+      </div>
+    </center>
+    <script src="js/Articulacion.js"></script>
+  </body>
 </html>

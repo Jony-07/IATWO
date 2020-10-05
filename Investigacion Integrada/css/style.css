@@ -1,82 +1,104 @@
+
+  
 header
 {
     color: white;
     text-align: center;
-    background: rgba(0, 0, 0, 0.562);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: initial;
+    font-weight: 2;
+    align-items: center;
 }
 body
 {
+   
     margin: auto;
     color: white;
-    
+   
+   
 }
 #header
 {
+    background: ;
     margin-top: 40px;
     margin-bottom: 40px;
-    
-    font-size: 30px;
+    background: rgba(24, 23, 23, 0.411);
+    font-size: 40px;
    
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: initial;
     font-weight: 2;
-  
-    color: rgb(235, 252, 1);
-}
-#legenda
-{
-    font-size: 30px;
+   
     color: white;
 }
+#titulo
+{
+    font-size: 60px;
+}
+
  
 #frm
 {
    
-    width: 800px;
-    height: 250px;
-    background: rgba(0, 0, 0, 0.562);
+    width: 700px;
+    height: 300px;
+    background: rgba(24, 23, 23, 0.411);
     flex: auto;
     display: block;
+    border-radius: 10px;
+    color: white;
+
+
 }
 
-#nombre_apellido
+#p_nombre
 {
-    position: relative;
     
-     right: 10pt;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: initial;
-    font-weight: 2;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
 
 }
+#p_apellido
+{
+    
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+
+}
+#p_pais
+{
+    font-family: 'Times New Roman', Times, serif;
+     font-size: 15px;
+    position: relative;
+    right: 85pt;
+
+}
+
 
 
 #Telefono_Email
 {
-    position: relative;
-    right: 52px;
+   
     
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: initial;
-    font-weight: 2;
-    top: 30pt;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
 }
-#Cpago
+#p_email
 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
     position: relative;
-    right: 130px;
-    
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: initial;
-    font-weight: 2;
+    left: 15pt;
 }
+
+
 #Tlegend
 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: initial;
     font-weight: 2;
     font-size: 25pt;
-    color: rgb(235, 252, 1);
+    color: white;
 }
 #pais
 {
@@ -84,40 +106,39 @@ body
     height: 20pt;
     width: 90pt;
     background: rgba(255, 253, 253, 0.836);
+    
 }
 #email
 {
     position: relative;
     
     height: 16pt;
-    width: 130pt;
+    width: 135pt;
     background: rgba(255, 253, 253, 0.836);
 }
 #listaNumeros
 {
     height: 20pt;
+    width:95pt ;
     background: rgba(255, 253, 253, 0.836);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: initial;
-    font-weight: 2;
+   
   
 }
 #telefono
 {
     height: 15.5pt;
-    width: 90pt;
+    width: 80pt;
     
     background: rgba(255, 253, 253, 0.836);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: initial;
-    font-weight: 2;
+    font-family: 'Times New Roman', Times, serif;
+     font-size: 15px;
 }
 #name
 {
     height: 15.5pt;
     background: rgba(255, 253, 253, 0.836);
     position: relative;
-    left: 4pt;
+    
    
 }
 #apellido
@@ -128,29 +149,32 @@ body
 }
 .letras
 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: initial;
-    font-weight: 2;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
     
 }
 
 #Footer
 {
-    background: rgba(0, 0, 0, 0.562);
+   
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: initial;
     font-weight: 2;
     position: relative;
-    font-size: 12px;
-    top: 50pt;
+    font-size: 1px;
+    top: 75pt;
     text-align: center;
-   
-    padding-bottom: 40px;
-    padding-top: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: rgba(24, 23, 23, 0.411);
+}
+#span
+{
+    font-size: 12px;
 }
 #text
 {
-    color: rgb(235, 252, 1);
+    color: whitesmoke;
 }
 
 
@@ -159,17 +183,27 @@ body
 #Registrar
 {
     position: relative;
-    top: 45pt;
+  
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: initial;
     font-weight: 2;
-    width: 80pt;
-    height: 20pt;
-    padding-bottom: 5px;
-    padding-top: 3px;
-    font-size: 15px;
-    background:  rgba(227, 243, 81, 0.815);
-    border-radius: 5px;
-    display: block;
+   
+    
   
+   
+  
+}
+.Mensaje_error
+{
+    background: rgba(241, 77, 77, 0.692);
+    border-radius: 5px;
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 15px;
+visibility: hidden;
+
+ 
+}
+#margin
+{
+    padding-top: 20px;
 }
