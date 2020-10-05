@@ -13,10 +13,33 @@ RegExpLastName = /^[A-Z a-záéúíóñ]{4,30}$/;
 {
     document.forms['frm'].submit();  
 }
+$('#ventana').modal('hide')
+  
 */
-function redireccionar(){
-  window.locationf="http://www.cristalab.com";
-} 
+function Donar()
+{
+  RegExpCvv = /^\d{3}$/;
+  RegExpTargeta=/^\d{4}\-\d{4}\-\d{4}\-\d{4}$/
+  RegExpCantidad=/^\d{1,}$/
+  
+  cvv=document.getElementById("cvv").value;
+  targeta=document.getElementById("ntargeta").value;
+  Cantidad=document.getElementById("cantidad").value;
+  if(!RegExpCvv.test(cvv) || !RegExpTargeta.test(targeta) || !RegExpCantidad.test(Cantidad))
+  {
+    alert("Formato correcto del cvv: Eje. 123 ");
+    alert("Formato correcto del número de serie de la targeta: Eje. 1234-1234-1234-1234");
+    alert("Campo cantidad, es dato númerico");
+  }
+  else
+  {
+    $('#ventana').modal('hide');
+    alert("Donación exitosa");
+  
+  }
+}
+
+
 setTimeout ("redireccionar()", 5000); //tiempo expresado en milisegundos
 
 document.getElementById("frm").addEventListener("submit", function (e) {

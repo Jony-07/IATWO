@@ -110,10 +110,10 @@ body
 }
 #email
 {
-    position: relative;
     
-    height: 18pt;
-    width: 135pt;
+    
+    height: 20pt;
+    width: 140pt;
     background: rgba(255, 253, 253, 0.836);
 }
 #listaNumeros
@@ -123,6 +123,28 @@ body
     background: rgba(255, 253, 253, 0.836);
    
   
+}
+#cantidad
+{
+    width: 80pt;
+}
+#ventana
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    
+}
+#cvv
+{
+    width: 60pt;
+}
+.width
+{
+    height: 21pt;
+}
+#ntargeta
+{
+    width: 120pt;
 }
 #telefono
 {
@@ -135,7 +157,7 @@ body
 }
 #name
 {
-    height: 15.5pt;
+    height:18pt;
     background: rgba(255, 253, 253, 0.836);
     position: relative;
     
@@ -143,7 +165,7 @@ body
 }
 #apellido
 {
-    height: 15.5pt;
+    height: 18pt;
     background: rgba(255, 253, 253, 0.836);
     
 }
