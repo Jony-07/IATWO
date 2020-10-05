@@ -112,7 +112,7 @@ body
 {
     position: relative;
     
-    height: 16pt;
+    height: 18pt;
     width: 135pt;
     background: rgba(255, 253, 253, 0.836);
 }
@@ -126,7 +126,7 @@ body
 }
 #telefono
 {
-    height: 15.5pt;
+    height: 20pt;
     width: 80pt;
     
     background: rgba(255, 253, 253, 0.836);

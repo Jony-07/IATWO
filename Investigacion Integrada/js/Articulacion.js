@@ -14,6 +14,11 @@ RegExpLastName = /^[A-Z a-záéúíóñ]{4,30}$/;
     document.forms['frm'].submit();  
 }
 */
+function redireccionar(){
+  window.locationf="http://www.cristalab.com";
+} 
+setTimeout ("redireccionar()", 5000); //tiempo expresado en milisegundos
+
 document.getElementById("frm").addEventListener("submit", function (e) {
   e.preventDefault();
   e.e;
@@ -47,7 +52,9 @@ function registrar() {
 
     document.getElementById("frm");
     {
+      
       document.forms["frm"].submit();
+      alert("Registrado Exitosamente.")
     }
   }
   /*
